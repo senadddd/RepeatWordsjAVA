@@ -8,20 +8,22 @@ import static org.junit.Assert.assertEquals;
 public class RepeatTest {
 
 
+
     @Test
     public void getNumOfChars() {
 
         //Arrange
 
         Logic be = new Logic();
-        MainRepeat mR = new MainRepeat();
-        mR.RunCode("be");
-        mR.RunCode("stop");
+        //MainRepeat mR = new MainRepeat();
+        be.NumOfChars("be");
+        be.NumOfChars("be");
+        //mR.RunCode("stop");
 
 
         //Act
         int actual = be.getNumOfChars();
-        int expected = 2;
+        int expected = 4;
 
 
         //Assert
@@ -35,10 +37,10 @@ public class RepeatTest {
         //Arrange
 
         Logic be = new Logic();
-        MainRepeat mR = new MainRepeat();
-        mR.RunCode("be");
-        mR.RunCode("be");
-        mR.RunCode("stop");
+        //MainRepeat mR = new MainRepeat();
+        be.NumOfChars("be");
+        be.NumOfChars("be");
+        //mR.RunCode("stop");
 
 
         //Act
@@ -57,10 +59,10 @@ public class RepeatTest {
         //Arrange
 
         Logic be = new Logic();
-        MainRepeat mR = new MainRepeat();
-        mR.RunCode("be");
-        mR.RunCode("be");
-        mR.RunCode("stop");
+
+        be.NumOfLines();
+        be.NumOfLines();
+        //mR.RunCode("stop");
 
 
         //Act

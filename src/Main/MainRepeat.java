@@ -2,28 +2,27 @@ package Main;
 
 import java.util.Scanner;
 
-
-        //String output = text.replace("DONE", "") + " ";
-
-
 public class MainRepeat {
 
 
     static Logic logic = new Logic();
     static MainRepeat repeat = new MainRepeat();
-    Scanner input = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);   //Scanner  läsa text från användaren och lagra
+                                                  // den i en strängvariabel med namnet text.
     String text = "";
 
 
-    public void RunCode(String userInput) {
+    public void RunCode(String userInput) {                  // loop som körs tills användaren anger "stopp" i textrutan.
+                                                            // Koden börjar med att kolla om det finns något i
+                                                           //  textrutan och sedan kollar den om det inte är "stopp".
         while (!"stop".equalsIgnoreCase(text)) {
 
             text = input.nextLine();
 
             if (!text.equalsIgnoreCase("stop")) {
-                logic.NumOfChars(text);
+                logic.NumOfChars(userInput);
 
-                logic.increaseNumOfLines();
+                logic.NumOfLines();     // returnera hur många rader finns i textsträngen
             }
 
         }

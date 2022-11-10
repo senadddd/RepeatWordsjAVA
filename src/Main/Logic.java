@@ -5,10 +5,10 @@ public class Logic {
 
     private int numOfChars; //and numOfChars
 
-    private int numOfLines;
+    private int numOfLines; // numOfLines
 
     public Logic() {
-        numOfWords = 0; // konstruktor
+        numOfWords = 0; // konstruktor som initierar alla tre variablerna med nollor
         numOfChars = 0;
         numOfLines = 0;
     }
@@ -27,19 +27,14 @@ public class Logic {
         return numOfLines;
     }
 
-    public void NumOfChars(String Text){
-        numOfChars = numOfChars + Text.length(); //
-        numOfWords++;
-
+    public void NumOfChars(String Text){   //deklarera en variabel som heter numOfChars.
+        numOfChars = numOfChars + Text.length(); //   ställer in värdet på numOfChars till summan av textlängd
+        numOfWords++;   //deklarerar koden  variabel  och ökar dess värde med ett.
     }
 
-    public void increaseNumOfLines(){
-      numOfLines++;
+    public void NumOfLines() {
+        numOfLines++;
     }
-
-
-
-
 }
 
 
